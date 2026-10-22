@@ -253,31 +253,58 @@
         </div>
       </div>
 
-      <!-- Placeholder Artifact 3 -->
-      <div class="rounded-2xl bg-gray-100/50 dark:bg-gray-800/20 border border-gray-200 dark:border-gray-800/80 p-6 flex flex-col justify-between opacity-60">
-        <div>
+      <!-- Artifact 3 (Active) -->
+      <div class="group relative rounded-2xl bg-white dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700/80 hover:border-blue-500/50 transition-all duration-300 overflow-hidden flex flex-col justify-between shadow-sm dark:shadow-lg">
+        <div class="p-6">
           <div class="flex items-center justify-between mb-4">
-            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-gray-700/50">
+            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/50">
               Artifact 03
             </span>
-            <span class="text-xs font-mono text-gray-400 dark:text-gray-500">Upcoming</span>
+            <span class="text-xs font-mono text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 dark:bg-emerald-400"></span> Active
+            </span>
           </div>
 
-          <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-300">
-            Idea: Expense Tracker
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+            jobtrack: AI Job Application Tracker
           </h3>
 
           <div class="mt-3">
-            <span class="text-[10px] font-bold uppercase tracking-wider text-gray-400 dark:text-gray-500 block mb-1">Idea:</span>
-            <p class="text-sm text-gray-500 dark:text-gray-500 leading-relaxed">
-              A simple expense tracker with charts that shows where my money goes each month.
+            <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 block mb-1">Summary:</span>
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+              A Python CLI that runs Claude Code headless (<code>claude -p</code>) on every job posting I add. Claude pulls out the company, role, skills, deadline and salary, then scores my resume against the job and rewrites my bullets for it. Plain code checks every claim against the source text: each skill has to appear in the posting, evidence has to be a real quote from my resume, and rewritten bullets can't contain invented numbers. Everything is stored in SQLite and shown on an HTML dashboard with company logos. Tested on 20 real postings I labeled myself: 19 of 20 had every field right, and skill precision was 100%.
             </p>
+          </div>
+
+          <div class="mt-4">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 block mb-1">Reflection:</span>
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+              The biggest lesson was to keep the model's job small and treat its output as untrusted input. Having Claude quote its evidence meant code could check every claim. The eval taught me more than eyeballing the output did. The first prompt looked fine, but measuring it showed 90% skill precision because it listed concepts like "algorithms" as skills, and a one-line prompt fix took it to 100%. The tests also caught bugs in my own code, including in the scorer itself. Next time I'd hold back a separate set of postings to test the prompt fix on, since I tuned it on the same 20.
+            </p>
+          </div>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-900/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700/60">Python</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-900/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700/60">Claude Code</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-900/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700/60">SQLite</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-900/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700/60">LLM Evals</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-900/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700/60">GitHub Actions</span>
           </div>
         </div>
 
-        <div class="mt-8 pt-4 border-t border-gray-200 dark:border-gray-800/60 flex items-center justify-between text-xs text-gray-400 dark:text-gray-500 font-mono">
-          <span>Status: Pending</span>
-          <span>Week --</span>
+        <div class="p-6 pt-0 mt-auto flex flex-col gap-2">
+          <a href="https://github.com/hsandhu14/jobtrack" target="_blank" rel="noopener"
+             class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 transition-colors shadow-sm">
+            <i class="fa-brands fa-github"></i>
+            <span>View Repository</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-80"></i>
+          </a>
+          <a href="https://github.com/hsandhu14/jobtrack/blob/main/eval/README.md" target="_blank" rel="noopener"
+             class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-700/60 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors">
+            <i class="fa-solid fa-chart-column"></i>
+            <span>View Eval Results</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-80"></i>
+          </a>
         </div>
       </div>
 

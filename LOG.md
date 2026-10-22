@@ -66,6 +66,14 @@ This is my record of what I asked the AI for while building my portfolio site, w
 - Artifact 4: a study tool that turns class notes into flashcards and quizzes
 - Artifact 5: a tool for a real user, such as a club or small business
 
+## Entry 7: Artifact 3 card
+
+**What I asked:** I asked Claude Code to replace the Artifact 3 placeholder ("Idea: Expense Tracker") with my finished project, jobtrack.
+
+**What came back:** An active card matching the Artifact 2 style, with the title, a summary, a reflection, tech tags, and two buttons: one to the repository and one to the eval results.
+
+**What I changed:** I didn't build the expense tracker idea. I built a job application tracker instead because it's useful for my internship search and fit the "model does real work" requirement better. The reflection is a draft that I need to read over and put into my own words.
+
 ## Deployment
 
 1. Uploaded `index.html` and `LOG.md` to the root of the `Portfolio` repo.
