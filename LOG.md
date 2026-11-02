@@ -74,6 +74,14 @@ This is my record of what I asked the AI for while building my portfolio site, w
 
 **What I changed:** I didn't build the expense tracker idea. I built a job application tracker instead because it's useful for my internship search and fit the "model does real work" requirement better. The reflection is a draft that I need to read over and put into my own words.
 
+## Entry 8: Artifact 4 card
+
+**What I asked:** I asked Claude Code to add the BattleShip game I'm contributing to on GitHub to the next open artifact slot.
+
+**What came back:** Claude Code found the repo (`nferencko/BattleShip`), but it only had a README and a `.gitignore` so far, with no game code yet. Instead of writing a summary for code that doesn't exist, it turned the Artifact 4 placeholder ("Idea: Study Helper") into an "In Progress" card with a short note and a link to the repo. It also fixed the release counter, which still said "2 / 5" even though three artifacts were active.
+
+**What I changed:** I'm doing the BattleShip team project instead of the study helper idea. Once the game is playable, I'll update the card with a real summary, my part of the work, the tech stack, and a reflection, and mark it Active.
+
 ## Deployment
 
 1. Uploaded `index.html` and `LOG.md` to the root of the `Portfolio` repo.
