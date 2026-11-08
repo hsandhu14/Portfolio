@@ -146,7 +146,7 @@
         <h2 class="text-2xl font-bold text-gray-900 dark:text-white tracking-tight">Course Artifacts</h2>
         <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Technical projects and assignments delivered during the term.</p>
       </div>
-      <span class="text-xs font-mono px-2.5 py-1 rounded bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-400 border border-gray-300 dark:border-gray-700">3 / 5 Released</span>
+      <span class="text-xs font-mono px-2.5 py-1 rounded bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-400 border border-gray-300 dark:border-gray-700">4 / 5 Released</span>
     </div>
 
     <!-- Artifacts Grid -->
@@ -308,50 +308,53 @@
         </div>
       </div>
 
-      <!-- Artifact 4 (In Progress) -->
+      <!-- Artifact 4 (Completed) -->
       <div class="group relative rounded-2xl bg-white dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700/80 hover:border-blue-500/50 transition-all duration-300 overflow-hidden flex flex-col justify-between shadow-sm dark:shadow-lg">
         <div class="p-6">
           <div class="flex items-center justify-between mb-4">
             <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/50">
               Artifact 04
             </span>
-            <span class="text-xs font-mono text-amber-600 dark:text-amber-400 flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-amber-500 dark:bg-amber-400 animate-pulse"></span> In Progress
+            <span class="text-xs font-mono text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-check"></i> Completed
             </span>
           </div>
 
           <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-            BattleShip
+            BattleShip (Team Project)
           </h3>
 
           <div class="mt-3">
             <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 block mb-1">Summary:</span>
             <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
-              A Battleship game I'm building as a team project with nferencko. We've just set up the repository, and the language and tools are still being decided. A full summary will be added here once the game is playable.
+              A browser Battleship game built by a three-person team: Mankirat Mann, Nic Ferencko and me. It has a vs Computer mode where the computer hunts around a hit and follows the line once it finds a ship, a pass-the-device 2-player mode, and online play over WebSockets, where the server holds both boards so neither player can see the other's ships. Built in TypeScript with Vite, with pixel-art assets, sound effects and unit tests, and deployed live on Render.
             </p>
           </div>
 
           <div class="mt-4">
             <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 block mb-1">Reflection:</span>
-            <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed italic">
-              Coming once the project is further along.
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+              My part of the code was small, so what I took away was mostly how the team worked. Everyone had their own branch and merged into main through pull requests, which let three people change the same project without breaking each other's work. Watching online play go from "only works locally" to a live Render link showed me how much deployment adds on top of working code. Next time I would take ownership of a specific feature early, so I'm contributing code and not just following along.
             </p>
           </div>
 
           <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-900/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700/60">TypeScript</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-900/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700/60">Vite</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-900/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700/60">WebSockets</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-900/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700/60">Render</span>
             <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-900/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700/60">Team Project</span>
-            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-900/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700/60">Game</span>
-            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-900/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700/60">Claude Code</span>
           </div>
         </div>
 
         <div class="p-6 pt-0 mt-auto">
-          <a href="https://github.com/nferencko/BattleShip" target="_blank" rel="noopener"
+          <a href="https://battleship-7pbl.onrender.com/" target="_blank" rel="noopener"
              class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 transition-colors shadow-sm">
-            <i class="fa-brands fa-github"></i>
-            <span>View Repository</span>
+            <i class="fa-solid fa-anchor"></i>
+            <span>Play Live Game</span>
             <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-80"></i>
           </a>
+          <p class="mt-2 text-[11px] text-center text-gray-500 dark:text-gray-400">Free hosting: the first load can take up to a minute.</p>
         </div>
       </div>
 

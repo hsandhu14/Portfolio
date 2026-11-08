@@ -82,6 +82,14 @@ This is my record of what I asked the AI for while building my portfolio site, w
 
 **What I changed:** I'm doing the BattleShip team project instead of the study helper idea. Once the game is playable, I'll update the card with a real summary, my part of the work, the tech stack, and a reflection, and mark it Active.
 
+## Entry 9: Artifact 4 completed
+
+**What I asked:** I asked Claude Code to mark the BattleShip card as completed and write a few sentences about what I learned and did, using the team's repository (`manimann13/BattleShip`).
+
+**What came back:** Claude Code read the repo and found the game is finished and live on Render. It also pointed out that my only commit was a one-line README change, so it didn't want to write that I built features I didn't build. I chose to present it as a team project instead: the summary describes what the team built, and the reflection is about what I learned from how the team worked (personal branches, pull requests and deployment).
+
+**What I changed:** The card is now marked Completed, the release counter says 4 / 5, and the button links to the live game. There's no repository button because the repo is private. The reflection is a draft that I need to read over and put into my own words.
+
 ## Deployment
 
 1. Uploaded `index.html` and `LOG.md` to the root of the `Portfolio` repo.
